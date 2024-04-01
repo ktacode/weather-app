@@ -1,0 +1,5 @@
+:root {
+  --dimen-layout-gap: 1rem;
+  --dimen-layout-gap--main: 2rem;
+  --dimen-layout-main-margin: 1.6rem;
+}

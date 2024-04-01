@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <main class="main">
+      <header class="header">
+        <div class="location__weather">
+          <p
+            class="location__weather-place text text-heading text-heading--2 text--bold"
+          >
+            Beni
+          </p>
+          <img
+            src="assets/weather_icon.svg"
+            alt="Beni"
+            class="location__weather-icon"
+          />
+          <p
+            class="location__weather-temp text text-heading text-heading--1 text--bold"
+          >
+            10ºC
+          </p>
+        </div>
+      </header>
+      <section class="section">
+        <article class="weather__sumary">
+          <div class="weather__sumary-header">
+            <p class="text text-regular text-regular--md text--bold">
+              Météo actuelle
+            </p>
+            <p class="text text-regular text-regular--sm">20h 30</p>
+          </div>
+          <div class="weather__sumary-weather">
+            <div class="weather__icon-temp">
+              <img
+                src="assets/weather_icon.svg"
+                alt="Beni"
+                class="location__weather-icon"
+              />
+              <p class="text text-regular--temp text--bold">10ºC</p>
+            </div>
+            <p class="text text-regular--sm">En partie nuageux</p>
+          </div>
+          <div class="weather__sumary-details">
+            <div class="weather__detail">
+              <p class="text text--regular detail-title">Qualité de l'air</p>
+              <p class="text text--regular text--bold detail-value">40</p>
+            </div>
+            <div class="weather__detail">
+              <p class="text text--regular detail-title">Vent</p>
+              <p class="text text--regular text--bold detail-value">6 km/h</p>
+            </div>
+            <div class="weather__detail">
+              <p class="text text--regular detail-title">Humidité</p>
+              <p class="text text--regular text--bold detail-value">61%</p>
+            </div>
+            <div class="weather__detail">
+              <p class="text text--regular detail-title">Visibilité</p>
+              <p class="text text--regular text--bold detail-value">3 km</p>
+            </div>
+            <div class="weather__detail">
+              <p class="text text--regular detail-title">Rayonnement</p>
+              <p class="text text--regular text--bold detail-value">0</p>
+            </div>
+            <div class="weather__detail">
+              <p class="text text--regular detail-title">Pression</p>
+              <p class="text text--regular text--bold detail-value">1011 mb</p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <footer class="footer"></footer>
+    </main>
+  </body>
+</html>

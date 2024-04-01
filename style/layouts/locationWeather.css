@@ -1,0 +1,5 @@
+.location__weather {
+  display: flex;
+  align-items: center;
+  gap: var(--dimen-layout-gap);
+}

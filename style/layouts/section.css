@@ -1,0 +1,55 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--dimen-layout-gap);
+  margin-top: var(--dimen-layout-gap--main);
+  padding: 0 var(--dimen-layout-main-margin);
+
+  & .weather__sumary {
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--color-white);
+    border-radius: var(--dimen-layout-main-margin);
+    padding: var(--dimen-layout-main-margin);
+
+    & .weather__sumary-header {
+      width: fit-content;
+      background-color: var(--color-main-background);
+      padding: 0.5rem 1rem;
+      border-radius: 1rem;
+    }
+
+    & .weather__sumary-weather {
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+      & .weather__icon-temp {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0;
+      }
+    }
+
+    & .weather__sumary-details {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.5rem 0 0 0;
+      border-top: 0.1rem solid var(--color-main-background);
+
+      & .weather__detail {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  }
+}
