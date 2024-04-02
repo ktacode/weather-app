@@ -8,7 +8,7 @@
   padding: 0 var(--dimen-layout-main-margin);
 
   & .weather__sumary,
-  & .future__forecast {
+  & .forecast {
     background-color: var(--color-white);
     border-radius: var(--dimen-layout-main-margin);
     padding: var(--dimen-layout-main-margin);
@@ -56,6 +56,11 @@
     }
   }
 
-  & .future__forecast {
+  & .forecast {
+    & .forecast__list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
   }
 }
