@@ -57,6 +57,9 @@
   }
 
   & .forecast {
+    display: flex;
+    flex-direction: column;
+    gap: var(--dimen-layout-gap);
     & .forecast__list {
       display: flex;
       flex-direction: column;
