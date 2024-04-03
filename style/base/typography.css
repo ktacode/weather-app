@@ -25,3 +25,7 @@
 .text--bold {
   font-weight: 700;
 }
+
+.text--h {
+  font-family: "Raleway", sans-serif;
+}
