@@ -26,6 +26,14 @@
   font-weight: 700;
 }
 
+.text--regular {
+  font-weight: 400;
+}
+
+.text--thin {
+  font-weight: 200;
+}
+
 .text--h {
   font-family: "Raleway", sans-serif;
 }
