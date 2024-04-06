@@ -4,7 +4,8 @@ const API_KEY = "68c1d6e4972945f1a20164852240604";
 const API = `http://api.weatherapi.com/v1/current.json?key=${API_KEY}`;
 
 const placeLbl = document.querySelector("#place");
-const conditionIcon = document.querySelectorAll("#conditionIcon");
+const conditionIcon = document.querySelector("#conditionIcon");
+const currentTempLbls = document.querySelectorAll(".current__temp-lbl");
 
 function getGeoCoordinates() {
   navigator.geolocation.getCurrentPosition(
@@ -19,6 +20,10 @@ function getGeoCoordinates() {
 function render(data) {
   placeLbl.textContent = data.location.name;
   conditionIcon.src = data.current.condition.icon;
+
+  currentTempLbls.forEach(
+    (lbl) => (lbl.textContent = `${data.current.temp_c}ºC`)
+  );
 }
 
 async function sendRequest(lat, lng) {
