@@ -7,6 +7,12 @@ const placeLbl = document.querySelector("#place");
 const conditionIcons = document.querySelectorAll(".condition-icon");
 const currentTempLbls = document.querySelectorAll(".current__temp-lbl");
 const conditionLbl = document.querySelector("#conditionLbl");
+const airQualityLbl = document.querySelector("#airQuality");
+const windSpeedLbl = document.querySelector("#windSpeedLbl");
+const humidityLbl = document.querySelector("#humidityLbl");
+const visibilityLbl = document.querySelector("#visibilityLbl");
+const uvLbl = document.querySelector("#uvLbl");
+const pressionLbl = document.querySelector("#pressionLbl");
 
 function getGeoCoordinates() {
   navigator.geolocation.getCurrentPosition(
@@ -21,6 +27,11 @@ function getGeoCoordinates() {
 function render(data) {
   placeLbl.textContent = data.location.name;
   conditionLbl.textContent = data.current.condition.text;
+  windSpeedLbl.textContent = `${data.current.wind_kph} km/h`;
+  humidityLbl.textContent = `${data.current.humidity} %`;
+  visibilityLbl.textContent = `${data.current.vis_km} km`;
+  uvLbl.textContent = `${data.current.uv}`;
+  pressionLbl.textContent = `${data.current.pressure_mb} mb`;
   conditionIcons.forEach((img) => (img.src = data.current.condition.icon));
   currentTempLbls.forEach(
     (lbl) => (lbl.textContent = `${data.current.temp_c}ºC`)
