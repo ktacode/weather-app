@@ -6,6 +6,7 @@ const API = `http://api.weatherapi.com/v1/current.json?key=${API_KEY}`;
 const placeLbl = document.querySelector("#place");
 const conditionIcons = document.querySelectorAll(".condition-icon");
 const currentTempLbls = document.querySelectorAll(".current__temp-lbl");
+const localTimeLbl = document.querySelector("#localTimeLbl");
 const conditionLbl = document.querySelector("#conditionLbl");
 const airQualityLbl = document.querySelector("#airQuality");
 const windSpeedLbl = document.querySelector("#windSpeedLbl");
@@ -26,6 +27,7 @@ function getGeoCoordinates() {
 
 function render(data) {
   placeLbl.textContent = data.location.name;
+  localTimeLbl.textContent = data.location.localtime.split(" ")[1];
   conditionLbl.textContent = data.current.condition.text;
   windSpeedLbl.textContent = `${data.current.wind_kph} km/h`;
   humidityLbl.textContent = `${data.current.humidity} %`;
